@@ -1,0 +1,123 @@
+﻿/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1f;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+        .nav-links a:hover,
+        .nav-links .active {
+            color: #f4c10f;
+        }
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('quiz-back-drop-pic.jpeg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    #hero .hero-content {
+        color: #fff;
+        text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+    }
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* Quiz Section */
+.content-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #252526;
+    border-radius: 12px;
+    margin: 2rem auto;
+    width: 90%;
+}
+
+.quiz-container {
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #2e2e30;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    text-align: left;
+}
+
+    .quiz-container h2 {
+        color: #f4c10f;
+        margin-bottom: 1.5rem;
+    }
+
+    .quiz-container p {
+        color: #ddd;
+        font-size: 1rem;
+    }
+
+.quiz-button {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background: #f4c10f;
+    color: #1d1d1f;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+    .quiz-button:hover {
+        background: #ffd700;
+    }
+
+#result h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #f4c10f;
+}
+
+#score {
+    font-size: 1.2rem;
+    color: #ddd;
+}

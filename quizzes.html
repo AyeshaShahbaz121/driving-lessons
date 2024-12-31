@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Quiz</title>
+    <link rel="stylesheet" href="quizzes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="driving-rules.html">Driving Rules</a></li>
+                <li><a href="road-signs.html">Road Signs</a></li>
+                <li><a href="tips.html">Safety Tips</a></li>
+                <li><a href="quizzes.html" class="active">Quiz</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>Driving Quiz</h1>
+                <p>Test your knowledge on driving rules and road signs with interactive quiz!</p>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="content-section">
+            <h2>Interactive Driving Quiz</h2>
+            <div class="quiz-container">
+                <div id="quiz"></div>
+                <button id="next-question" class="quiz-button">Next Question</button>
+                <div id="result" style="display: none;">
+                    <h3>Your Final Score:</h3>
+                    <p id="score"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="quizzes.js"></script>
+</body>
+</html>
